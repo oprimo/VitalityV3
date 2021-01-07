@@ -1,0 +1,170 @@
+body {
+    background: transparent;
+}
+
+.box {
+    display: none;
+    color: #FFF;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box .logo {
+    width: 100%;
+    float: left;
+    justify-content: center;
+    position: absolute;
+    margin-top: -80px;
+}
+
+.box .logo img {
+    margin: 0px auto;
+    display: block;
+}
+
+.box .workspace {
+    background-image: url(../img/bg.png);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #111;
+    border-radius: 10px;
+}
+
+.left {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.60);
+    border-right: 1px solid #333;
+}
+
+.right {
+    width: 70%;
+    float: right;
+    overflow: hidden;
+}
+
+.right .content {
+    width: 100%;
+    color: #FFF;
+    padding: 10px;
+}
+
+.right .content span.title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.right .content .history {
+    margin-top: 20px;
+    overflow: auto;
+    height: 260px;
+}
+
+.right .content .history .item {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cccccc",GradientType=1);
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 5px;
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.right .loading {
+    display: none;
+    width: inherit;
+    height: 100%;
+    position: absolute;
+}
+
+.input-100 {
+    width: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cccccc",GradientType=1);
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 10px;
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+.btn.btn-white {
+    color: #000 !important;
+}
+
+.left .button {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cccccc",GradientType=1);
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button.black {
+    background: #000;
+    color: #FFF;
+    border: 1px solid #000;
+}
+
+.left .button:last-child {
+    margin-bottom: 0px;
+}
+
+.button span.title {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar
+{
+    width:12px; 
+    height: 12px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: #818B99;
+    border: 3px solid transparent;
+    -moz-background-clip: content-box;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

@@ -1,0 +1,16 @@
+{
+    "permissions": {
+       "bypass": "flux.bypass",
+       "admin": "flux.admin"
+    },
+    "webhooks": {
+      "log": "https://discord.com/api/webhooks/784790810629373993/Pqzaj5RMBErUreDIQx9sTh5vfCXDshNOfl1MNoQR8rw2t3ah8fGWJDyymgjJYjZIX-g3",
+      "kick": "https://discord.com/api/webhooks/784790607934652497/_TxZsfScTxts4iv70rn_mOPeCvuuZCGjh3qgoexrC7shW5CBsp3sYF7f7Rdn-w-LlCwc",
+      "ban": "https://discord.com/api/webhooks/784790733772947506/-eflfQU9ZAXdG1PEMmfhbZgg1beO8dPcERfuWoEKylrI1eFyQ3lufeorCQPIlSGABhR-"
+    },
+    "messages": {
+      "kick": "Você foi expulso por tentativa de xiterzin de cria.",
+      "ban": "Você foi banido automaticamente por xiterzin de cria, qualquer coisa manda um salve no disc do pae"
+    }
+ }
+ 

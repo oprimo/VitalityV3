@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <head>
+        <meta charset="utf-8">
+        <title>KSBank</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/semantic.min.css" rel="stylesheet">
+        <link href="css/theme.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="box">
+            <div class="logo">
+                <img src="img/logo-big.png" style="max-width: 250px;" />
+            </div>
+            <div class="workspace">
+                <div class="left">
+                    <div class="menu">
+                        <div class="button" data-ref="home">
+                            <span class="title"><i class="fas fa-home"></i> Início</span><br />
+                            Saldo e movimentações
+                        </div>
+                        <div class="button" data-ref="withdraw">
+                            <span class="title"><i class="fas fa-hand-holding-usd"></i> Saque</span><br />
+                            Faça um saque rápido
+                        </div>
+                        <div class="button" data-ref="deposit">
+                            <span class="title"><i class="fas fa-wallet"></i> Depósito</span><br />
+                            Deposite em sua conta
+                        </div>
+                        <div class="button" data-ref="transfer">
+                            <span class="title"><i class="fas fa-exchange-alt"></i> Transferência</span><br />
+                            Transfira dinheiro
+                        </div>
+                        <div class="button black" data-ref="close">
+                            <span class="title"><i class="fas fa-sign-out-alt"></i> Encerrar sessão</span><br />
+                            Saia da sua conta
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="loading"></div>
+                    <div class="content">
+                        <div class="home content-item" style="display: none;">
+                            <div>
+                                <span class="title name-person">Bem-vind@ ...</span><br />
+                                Seu saldo em conta é de <b class="money-amount">R$ ...</b>.
+                            </div>
+                            <!--<div class="history">
+                                <span class="title">Histórico bancário</span>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                                <div class="item">
+                                    <b>Transferência recebida</b><br />
+                                    Você recebeu <b>R$500</b> de Zé Roscão - Data: 20/06/2020
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="withdraw content-item" style="display: none;">
+                            <span class="title">Saque</span><br />
+                            Seu saldo em conta é de <b class="money-amount">...</b>.
+                            <div class="mt-3">
+                                <input type="number" class="input-100" id="input-withdraw" placeholder="Valor" />
+                                <button class="btn btn-white" onClick="KSBank.Withdraw()">Sacar</button>
+                            </div>
+                        </div>
+                        <div class="deposit content-item" style="display: none;">
+                            <span class="title">Depósito</span><br />
+                            Seu saldo em conta é de <b class="money-amount">...</b>.
+                            <div class="mt-3">
+                                <input type="number" class="input-100" id="input-deposit" placeholder="Valor" />
+                                <button class="btn btn-white" onClick="KSBank.Deposit()">Depositar</button>
+                            </div>
+                        </div>
+                        <div class="transfer content-item" style="display: show;">
+                            <span class="title">Transferência</span><br />
+                            Seu saldo em conta é de <b class="money-amount">...</b>.
+                            <div class="mt-3">
+                                <span>Digite o passaporte</span>
+                                <input type="number" class="input-100" id="input-transfer-id" placeholder="Passaporte" />
+                            </div>
+                            <div class="mt-1">
+                                <span>Digite o valor</span>
+                                <input type="number" class="input-100" id="input-transfer-value" placeholder="Valor" />
+                            </div>
+                            <button class="btn btn-white" onClick="KSBank.Transfer()">Transferir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <script src="js/main.js"></script>
+
+</html>
