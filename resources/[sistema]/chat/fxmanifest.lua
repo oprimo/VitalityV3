@@ -1,4 +1,4 @@
-dependency "vitality_ac" client_script "@vitality_ac/client.lua" fx_version 'adamant'
+fx_version 'adamant'
 game 'gta5'
 
 ui_page 'html/index.html'

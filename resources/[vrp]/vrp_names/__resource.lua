@@ -1,4 +1,4 @@
-dependency "vitality_ac" client_script "@vitality_ac/client.lua" description "vrp_names"
+ description "vrp_names"
 
 dependency "vrp"
 

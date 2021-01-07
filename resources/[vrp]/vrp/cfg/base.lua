@@ -5,7 +5,10 @@ cfg.db = {
 	host = "127.0.0.1",
 	database = "vltrp",
 	user = "root",
-	password = "VR@159#"
+	password = ""
 }
 
 return cfg
+
+
+

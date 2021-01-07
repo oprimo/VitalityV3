@@ -1,4 +1,4 @@
-dependency "vitality_ac" client_script "@vitality_ac/client.lua" --ServerSync Resource made by Wyste for Fivem--
+ --ServerSync Resource made by Wyste for Fivem--
 --Repository: https://github.com/Wyste/ServerSync --
 
 name 'ServerSync'
