@@ -23,14 +23,14 @@ TokoVoipConfig = {
 		-- If the TSChannelWait is enabled, players who are currently in TSChannelWait will be automatically moved
 		-- to the TSChannel once everything is running
 		TSChannel = "[JOGANDO]",
-		TSPassword = "159753", -- TeamSpeak channel password (can be empty)
+		TSPassword = "", -- TeamSpeak channel password (can be empty)
 
 		-- Optional: TeamSpeak waiting channel name, players wait in this channel and will be moved to the TSChannel automatically
 		-- If the TSChannel is public and people can join directly, you can leave this empty and not use the auto-move
 		TSChannelWait = "[AGUARDANDO]",
 		
 		-- Blocking screen informations
-		TSServer = "54.39.211.23:9004", -- TeamSpeak server address to be displayed on blocking screen
+		TSServer = "", -- TeamSpeak server address to be displayed on blocking screen
 		TSChannelSupport = "", -- TeamSpeak support channel name displayed on blocking screen
 		TSDownload = "", -- Download link displayed on blocking screen
 		TSChannelWhitelist = { -- Black screen will not be displayed when users are in those TS channels
